@@ -1,9 +1,14 @@
-import './App.css';
+import "./App.css";
+
+import BackgroundCircles from "./components/BackgroundCircles/BackgroundCircles";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hi</h1>
+      <BackgroundCircles />
+      <section>
+        <h1>Hi</h1>
+      </section>
     </div>
   );
 }
