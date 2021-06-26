@@ -1,14 +1,26 @@
 import "./App.css";
+import { Route, Switch, Redirect } from "react-router-dom";
 
 import BackgroundCircles from "./components/BackgroundCircles/BackgroundCircles";
 import Home from "./components/Home/Home";
+import AboutMe from "./components/AboutMe/AboutMe";
 
 function App() {
   return (
     <div className="App">
       <BackgroundCircles />
       <section>
-        <Home />
+        <Switch>
+          <Route path="/home" exact>
+            <Home />
+          </Route>
+          <Route path="/about-me" exact>
+            <AboutMe />
+          </Route>
+          <Route path="*">
+            <Redirect to="/home" />
+          </Route>
+        </Switch>
       </section>
     </div>
   );
