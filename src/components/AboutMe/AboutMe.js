@@ -1,12 +1,15 @@
 import "./AboutMe.css";
-import ProfilePic from "../../images/ProfilePic-large.png";
+import ProfilePic from "../../files/ProfilePic-large.png";
 import Skills from "../Skills/Skills";
+import ContactDetails from "../ContactDetails/ContactDetails";
+import Resume from "../../files/SasankTadepalli-Resume.pdf";
 
 const AboutMe = () => {
   return (
     <div className="about-me">
       <div className="left">
         <img src={ProfilePic} alt="" />
+        <ContactDetails />
       </div>
       <div className="right">
         <h1>About Me</h1>
@@ -35,6 +38,13 @@ const AboutMe = () => {
           Martin.
         </p>
         <Skills />
+        <a
+          href={Resume}
+          download="SasankTadepalli-Resume.pdf"
+          className="resume"
+        >
+          Download Resume
+        </a>
       </div>
     </div>
   );

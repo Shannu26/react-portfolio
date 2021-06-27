@@ -9,15 +9,22 @@ const Skills = () => {
     "JavaScript",
     "Git",
     "MongoDB",
+    "Redux",
     "HTML",
     "CSS",
     "Swift",
     "ExpressJS",
     "REST API",
+    "MVC",
+    "Responsive Design",
   ];
 
-  let skillsUI = skills.map((skill) => {
-    return <p className="skill">{skill}</p>;
+  let skillsUI = skills.map((skill, i) => {
+    return (
+      <p className="skill" key={i}>
+        {skill}
+      </p>
+    );
   });
   return (
     <div className="skills-container">

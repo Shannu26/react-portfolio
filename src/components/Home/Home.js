@@ -1,5 +1,5 @@
 import "./Home.css";
-import ProfilePic from "../../images/ProfilePic-small.png";
+import ProfilePic from "../../files/ProfilePic-small.png";
 
 const Home = () => {
   return (
