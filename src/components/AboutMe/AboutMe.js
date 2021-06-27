@@ -2,6 +2,7 @@ import "./AboutMe.css";
 import ProfilePic from "../../files/ProfilePic-large.png";
 import Skills from "../Skills/Skills";
 import ContactDetails from "../ContactDetails/ContactDetails";
+import EduExp from "../EduExp/EduExp";
 import Resume from "../../files/SasankTadepalli-Resume.pdf";
 
 const AboutMe = () => {
@@ -38,6 +39,7 @@ const AboutMe = () => {
           Martin.
         </p>
         <Skills />
+        <EduExp />
         <a
           href={Resume}
           download="SasankTadepalli-Resume.pdf"
