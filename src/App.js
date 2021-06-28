@@ -4,6 +4,7 @@ import { Route, Switch, Redirect } from "react-router-dom";
 import BackgroundCircles from "./components/BackgroundCircles/BackgroundCircles";
 import Home from "./components/Home/Home";
 import AboutMe from "./components/AboutMe/AboutMe";
+import MyProjects from "./components/MyProjects/MyProjects";
 import ContactMe from "./components/ContactMe/ContactMe";
 
 function App() {
@@ -17,6 +18,9 @@ function App() {
           </Route>
           <Route path="/about-me" exact>
             <AboutMe />
+          </Route>
+          <Route path="/my-projects" exact>
+            <MyProjects />
           </Route>
           <Route path="/contact-me" exact>
             <ContactMe />

@@ -30,6 +30,10 @@
   text-decoration: none;
 }
 
+.contact-detail p a:hover {
+  border-bottom: 1px solid #18293c;
+}
+
 .contact-detail * {
   margin: 1%;
 }

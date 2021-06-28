@@ -20,7 +20,7 @@ const Home = () => {
           <button className="link" onClick={() => clickHandler("/about-me")}>
             More About Me
           </button>
-          <button className="link" onClick={() => clickHandler("/projects")}>
+          <button className="link" onClick={() => clickHandler("/my-projects")}>
             My Projects
           </button>
         </div>

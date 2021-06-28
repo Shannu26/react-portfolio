@@ -10,7 +10,7 @@ const ContactMe = () => {
   const subjectRef = useRef();
   const messageRef = useRef();
 
-  emailJS.init("user_fmw4K0ULzEF965yG5XNZA");
+  emailJS.init(process.env.REACT_APP_EMAIL_INIT_ID);
 
   const sendEmail = () => {
     if (
