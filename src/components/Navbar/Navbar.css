@@ -1,0 +1,64 @@
+.navbar {
+  width: 100%;
+  height: 5rem;
+  /* position: absolute; */
+  /* background-color: pink; */
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+  border-radius: inherit;
+}
+
+.navbar .left,
+.navbar .right {
+  display: flex;
+  border-radius: inherit;
+  align-items: center;
+  padding-left: 5%;
+}
+
+.navbar .left {
+  padding-left: 10%;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.navbar .left .nav-link {
+  color: #e02f6b;
+  opacity: 1;
+}
+
+.navbar .left .nav-link {
+  border-color: #e02f6b;
+}
+
+.navbar .right {
+  justify-content: space-evenly;
+  font-size: 1rem;
+}
+
+.navbar .nav-link {
+  text-decoration: none;
+  color: #18293c;
+  opacity: 0.8;
+  border-color: #18293c;
+  margin: 1%;
+}
+
+.navbar .active {
+  color: #e02f6b;
+  opacity: 1;
+  border-color: #e02f6b;
+  border-bottom: 2px solid #e02f6b;
+}
+
+.navbar .nav-link:hover {
+  border-width: 2px;
+  opacity: 1;
+  border-style: solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}

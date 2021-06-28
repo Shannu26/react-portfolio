@@ -11,7 +11,7 @@
 
 .about-me .left {
   margin: 0 auto;
-  margin-top: 40%;
+  margin-top: 30%;
 }
 
 .about-me .left img {
@@ -25,6 +25,7 @@
 .about-me .right {
   margin-top: 8%;
   padding: 10% 0;
+  padding-top: 5%;
   /* background-color: pink; */
   display: flex;
   flex-direction: column;
