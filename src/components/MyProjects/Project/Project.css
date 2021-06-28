@@ -25,6 +25,18 @@
   font-weight: 400;
 }
 
+.project h4 {
+  margin: 0 2% 1% 2%;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.project h4 span {
+  font-style: italic;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
 .project ul {
   display: grid;
   grid-template-columns: 1fr 1fr;

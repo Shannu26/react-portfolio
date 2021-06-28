@@ -19,11 +19,12 @@ const myProjects = [
     image: PortfolioImage,
     liveURL: "/",
     githubLink: "https://github.com/Shannu26/react-portfolio",
+    role: "Frontend",
   },
   {
     title: "Weather App",
     description:
-      "It is a simple Weather app built using ReactJS and OpenWeatherMap API to get weather details of a particular city. The weather details include Current Temperature, wind speed, humidity %, pressure, sunrise and sunset time, and also weather forecast for next 48 hours",
+      "It is a simple Weather app built using ReactJS and OpenWeatherMap API to get weather details of a particular city. The weather details include Current Temperature, wind speed, humidity %, pressure, sunrise and sunset time, and also weather forecast for next 48 hours.",
     technologies: [
       "ReactJS",
       "Netlify Hosting",
@@ -34,6 +35,7 @@ const myProjects = [
     image: WeatherAppImage,
     liveURL: "https://distracted-goodall-270241.netlify.app/",
     githubLink: "https://github.com/Shannu26/react-weather-app",
+    role: "Frontend",
   },
   {
     title: "Sort Visualizer",
@@ -43,6 +45,7 @@ const myProjects = [
     image: SortVisualizerImage,
     liveURL: "https://jovial-joliot-49f56b.netlify.app/",
     githubLink: "https://github.com/Shannu26/react-sorting-visualizer",
+    role: "Frontend",
   },
 ];
 

@@ -7,6 +7,9 @@ const Project = (props) => {
       <img src={props.image} alt={props.title} />
       <h1>{props.title}</h1>
       <p>{props.description}</p>
+      <h4>
+        Role : <span>{props.role}</span>
+      </h4>
       <h5>Technologies Used : </h5>
       <ul>
         {props.technologies.map((tech, i) => (
