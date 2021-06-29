@@ -69,3 +69,38 @@
 .project a:hover {
   border-bottom: 1px solid #e02f6b;
 }
+
+@media (max-width: 1200px) {
+  .project {
+    width: 60%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  .project {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .project {
+    width: 95%;
+    margin: auto;
+  }
+
+  .project img {
+    height: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .project ul {
+    grid-template-columns: 1fr;
+  }
+
+  .project a {
+    display: block;
+  }
+}

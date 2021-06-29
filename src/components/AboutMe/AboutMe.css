@@ -88,3 +88,51 @@
 }
 
 /* Button End */
+
+@media (max-width: 1000px) {
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .about-me .left {
+    width: 100%;
+    display: flex;
+    margin-top: 5%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .about-me .right h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .about-me .left {
+    flex-direction: column;
+  }
+
+  .about-me .right h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .about-me .left img {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-me .right h1 {
+    font-size: 1.3rem;
+  }
+
+  .about-me .right p {
+    font-size: 0.8rem;
+  }
+}

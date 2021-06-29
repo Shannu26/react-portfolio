@@ -24,3 +24,13 @@
   min-width: 4rem;
   width: fit-content;
 }
+
+@media (max-width: 500px) {
+  .skills-container h2 {
+    font-size: 1.2rem;
+  }
+
+  .skills .skill {
+    font-size: 0.6rem;
+  }
+}

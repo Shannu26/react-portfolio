@@ -21,6 +21,10 @@
   grid-template-columns: 3fr 2fr;
 }
 
+.contact-me .container .right {
+  width: 90%;
+}
+
 .container .left textarea {
   width: 90%;
   height: 6rem;
@@ -88,4 +92,41 @@
 
 .container button:hover::before {
   width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .contact-me .container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-me .container .right {
+    width: 60%;
+    margin: auto;
+  }
+
+  .contact-me h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .contact-me .container .right {
+    width: 80%;
+    margin: auto;
+  }
+
+  .contact-me h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-me .container .right {
+    width: 95%;
+    margin: auto;
+  }
+
+  .contact-me h1 {
+    font-size: 1.3rem;
+  }
 }

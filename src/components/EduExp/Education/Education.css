@@ -32,3 +32,10 @@
   font-size: 0.8rem;
   font-weight: 250;
 }
+
+@media (max-width: 350px) {
+  .education ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
