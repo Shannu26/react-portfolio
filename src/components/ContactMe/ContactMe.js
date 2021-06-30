@@ -36,8 +36,12 @@ const ContactMe = () => {
           message: messageRef.current.value,
         }
       )
-      .then((res) => console.log(res))
-      .catch((err) => console.log(err));
+      .then((res) => {
+        alert("Email has been sent.");
+      })
+      .catch((err) => {
+        alert(err.text);
+      });
     nameRef.current.value = "";
     emailRef.current.value = "";
     subjectRef.current.value = "";
