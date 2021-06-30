@@ -1,7 +1,6 @@
 import "./Project.css";
 
 const Project = (props) => {
-  console.log(props);
   return (
     <div className="project">
       <img src={props.image} alt={props.title} />

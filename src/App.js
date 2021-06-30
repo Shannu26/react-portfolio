@@ -1,5 +1,6 @@
 import "./App.css";
 import { Route, Switch, Redirect } from "react-router-dom";
+import { useState, useLayoutEffect } from "react";
 
 import BackgroundCircles from "./components/BackgroundCircles/BackgroundCircles";
 import Home from "./components/Home/Home";
@@ -9,11 +10,37 @@ import ContactMe from "./components/ContactMe/ContactMe";
 import Navbar from "./components/Navbar/Navbar";
 
 function App() {
+  const [showSideNav, setShowSideNav] = useState(false);
+
+  useLayoutEffect(() => {
+    const sizeChangeHandler = () => {
+      if (window.innerWidth >= 800) {
+        setShowSideNav(false);
+      }
+    };
+    window.addEventListener("resize", sizeChangeHandler);
+
+    return () => {
+      window.removeEventListener("resize", sizeChangeHandler);
+    };
+  });
+
+  const toggleSideNavHandler = () => {
+    setShowSideNav((prev) => !prev);
+  };
+
+  const closeSideNavHandler = () => {
+    setShowSideNav(false);
+  };
   return (
     <div className="App">
       <BackgroundCircles />
       <section>
-        <Navbar />
+        <Navbar
+          toggleSideNavHandler={toggleSideNavHandler}
+          showSideNav={showSideNav}
+          closeSideNavHandler={closeSideNavHandler}
+        />
         <Switch>
           <Route path="/home" exact>
             <Home />
