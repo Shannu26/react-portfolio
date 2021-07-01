@@ -9,6 +9,8 @@ import PortfolioImage from "../../files/portfolio.png";
 const myProjects = [
   {
     title: "My Portfolio",
+    description:
+      "It is a website made to showcase my skills, my work and introduce myself to the possible recruiters and also to get connections to other developers across the world. It includes information about me, my skills and hobbies, and my notable projects.",
     technologies: [
       "ReactJS",
       "EmailJS",
