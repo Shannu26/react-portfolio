@@ -88,16 +88,36 @@
   .navbar .left {
     font-size: 1rem;
   }
+
+  #nav-show {
+    margin-bottom: 30%;
+  }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 380px) {
   .navbar .left {
     font-size: 0.8rem;
+  }
+
+  #nav-show {
+    margin-bottom: 35%;
+  }
+}
+
+@media (max-width: 330px) {
+  #nav-show {
+    margin-bottom: 40%;
   }
 }
 
 @media (max-width: 300px) {
   .navbar .left {
     font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 290px) {
+  #nav-show {
+    margin-bottom: 45%;
   }
 }

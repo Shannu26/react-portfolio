@@ -102,5 +102,8 @@
 
   .project a {
     display: block;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: fit-content;
   }
 }
