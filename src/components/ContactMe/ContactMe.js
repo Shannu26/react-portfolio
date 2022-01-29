@@ -10,7 +10,7 @@ const ContactMe = () => {
   const subjectRef = useRef();
   const messageRef = useRef();
 
-  emailJS.init(process.env.REACT_APP_EMAIL_INIT_ID);
+  emailJS.init("user_fmw4K0ULzEF965yG5XNZA");
 
   const sendEmail = () => {
     if (
@@ -25,17 +25,13 @@ const ContactMe = () => {
 
     // alert(process.env.REACT_APP_EMAIL_SERVICE_ID);
     emailJS
-      .send(
-        process.env.REACT_APP_EMAIL_SERVICE_ID,
-        process.env.REACT_APP_EMAIL_TEMPLATE_ID,
-        {
-          from_name: nameRef.current.value,
-          subject: subjectRef.current.value,
-          to_name: "Sasank Tadepalli",
-          email: emailRef.current.value,
-          message: messageRef.current.value,
-        }
-      )
+      .send("service_t7puihk", "template_135cura", {
+        from_name: nameRef.current.value,
+        subject: subjectRef.current.value,
+        to_name: "Sasank Tadepalli",
+        email: emailRef.current.value,
+        message: messageRef.current.value,
+      })
       .then((res) => {
         alert("Email has been sent.");
       })
