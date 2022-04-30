@@ -5,7 +5,7 @@ import Education from "./Education/Education";
 import Experience from "./Experience/Experience";
 
 const EduExp = () => {
-  const [content, setContent] = useState(0);
+  const [content, setContent] = useState(1);
 
   const clickHandler = (content) => {
     setContent(content);

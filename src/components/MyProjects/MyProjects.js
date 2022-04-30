@@ -5,6 +5,7 @@ import Project from "./Project/Project";
 import SortVisualizerImage from "../../files/sort-visualizer.png";
 import WeatherAppImage from "../../files/weather-app.png";
 import PortfolioImage from "../../files/portfolio.png";
+import NotesAppImage from "../../files/notes-app.png";
 
 const myProjects = [
   {
@@ -38,6 +39,25 @@ const myProjects = [
     liveURL: "https://distracted-goodall-270241.netlify.app/",
     githubLink: "https://github.com/Shannu26/react-weather-app",
     role: "Frontend",
+  },
+  {
+    title: "Notes App",
+    description:
+      "It is a Full Stack Web App built using NodeJS, PassportJS and MongoDB to perform note taking. Users can create specific categories and take notes related to them. Implemented CRUD functionality using MongoDB and MongooseJS and, authentication using PassportJS.",
+    technologies: [
+      "NodeJS",
+      "HTML5",
+      "CSS3",
+      "MongoDB",
+      "MongooseJS",
+      "ExpressJS",
+      "EJS",
+      "PassportJS",
+    ],
+    image: NotesAppImage,
+    liveURL: "https://my-notter-app.herokuapp.com/",
+    githubLink: "https://github.com/Shannu26/full-stack-notes-app",
+    role: "Full Stack",
   },
   {
     title: "Sort Visualizer",
