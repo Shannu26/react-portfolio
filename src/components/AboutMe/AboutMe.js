@@ -16,7 +16,7 @@ const AboutMe = () => {
         <h1>About Me</h1>
         <p>
           Hi! I'm <span>Sasank Tadepalli</span>. I'm a Computer Science student
-          at V R Siddhartha Engineering College.
+          at California State University, East Bay.
         </p>
         <p>
           I'm a <span>Self-Taught</span> Full Stack Web Developer, iOS Developer
@@ -27,9 +27,9 @@ const AboutMe = () => {
         <p>
           My notable experiences include <span>Leading</span> a team of 4 to
           develop an iOS Application that helps users to find and inform
-          hospitals when there is an emergency. During last May, I worked as a{" "}
-          <span>Freelance</span> to develop an iOS Application to store the book
-          details present in prabhupada.io website.
+          hospitals when there is an emergency. During May 2020, I worked as a{" "}
+          <span>Freelancer</span> to develop an iOS Application to store the
+          book details present in prabhupada.io website.
         </p>
         <p>
           When I'm not coding, I spend my time <span>Playing Chess</span> and{" "}

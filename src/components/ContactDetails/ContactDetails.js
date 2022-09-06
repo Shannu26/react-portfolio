@@ -14,7 +14,7 @@ const ContactDetails = () => {
       </div>
       <div className="contact-detail">
         <i className="fa fa-map-marker"></i>
-        <p>Vijayawada, India</p>
+        <p>Union City, California</p>
       </div>
       <div className="contact-detail">
         <i className="fa fa-github"></i>
@@ -26,7 +26,7 @@ const ContactDetails = () => {
       </div>
       <div className="contact-detail">
         <i className="fa fa-mobile"></i>
-        <p>9502974190</p>
+        <p>+1 (949) 763-1838</p>
       </div>
       <div className="contact-detail">
         <i className="fa fa-linkedin"></i>

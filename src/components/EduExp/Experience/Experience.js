@@ -4,14 +4,20 @@ const Experience = () => {
   return (
     <div>
       <div className="experience">
-        <p id="p">08/2021 - Present</p>
+        <p id="p">08/2021 - 08/2022</p>
         <h1 id="h1">Systems Engineer</h1>
         <h2 id="h2">Infosys</h2>
         <h5 id="h5">Achievements / Tasks :</h5>
         <ul>
+          <li>Worked as a Data Analyst in the AINADEL Department.</li>
           <li>
-            Learning topics such as Python, Data Visualisation, Exploratory Data
-            Analysis, Probability and Statistics.
+            Leveraged knowledge in Blue Prism RPA tool to automate data
+            collection phase of Data Science Life Cycle.
+          </li>
+          <li>
+            Leveraged knowledge in Exploratory Data Analysis, Feature
+            Engineering and Machine Learning to build predictive models from the
+            data collected.
           </li>
         </ul>
       </div>
