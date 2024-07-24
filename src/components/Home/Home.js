@@ -1,37 +1,47 @@
-import "./Home.css";
-import ProfilePic from "../../files/ProfilePic-small.png";
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import profile from "../../Assets/profile.png";
+import Home2 from "./Home2";
+import Type from "./Type";
 
-import { useHistory } from "react-router-dom";
-
-const Home = () => {
-  const history = useHistory();
-
-  const clickHandler = (path) => {
-    history.push(path);
-  };
+function Home() {
   return (
-    <div className="home">
-      <div className="left">
-        <h3>Hello, I'm</h3>
-        <h1>Sasank Tadepalli</h1>
-        <h2>Full Stack Web Developer.</h2>
-        <h2>Programmer.</h2>
-        <div className="links">
-          <button className="link" onClick={() => clickHandler("/about-me")}>
-            More About Me
-          </button>
-          <button className="link" onClick={() => clickHandler("/my-projects")}>
-            My Projects
-          </button>
-        </div>
-      </div>
-      <div className="right">
-        <div className="img-container">
-          <img src={ProfilePic} alt="" />
-        </div>
-      </div>
-    </div>
+    <section>
+      <Container fluid className="home-section" id="home">
+        <Container className="home-content">
+          <Row>
+            <Col md={7} className="home-header">
+              <h1 style={{ paddingBottom: 15 }} className="heading">
+                Hi There!{" "}
+                <span className="wave" role="img" aria-labelledby="wave">
+                  👋🏻
+                </span>
+              </h1>
+
+              <h1 className="heading-name">
+                I'M
+                <strong className="main-name"> Sasank Tadepalli</strong>
+              </h1>
+
+              <div style={{ padding: 50, textAlign: "left" }}>
+                <Type />
+              </div>
+            </Col>
+
+            <Col md={5} style={{ paddingBottom: 20 }}>
+              <img
+                src={profile}
+                alt="home pic"
+                className="img-fluid"
+                style={{ maxHeight: "400px", borderRadius: "10%" }}
+              />
+            </Col>
+          </Row>
+        </Container>
+      </Container>
+      <Home2 />
+    </section>
   );
-};
+}
 
 export default Home;

@@ -1,65 +1,35 @@
-import "./App.css";
-import { Route, Switch, Redirect } from "react-router-dom";
-import { useState, useLayoutEffect } from "react";
-
-import BackgroundCircles from "./components/BackgroundCircles/BackgroundCircles";
+import React, { useState, useEffect } from "react";
+import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
-import AboutMe from "./components/AboutMe/AboutMe";
-import MyProjects from "./components/MyProjects/MyProjects";
-import ContactMe from "./components/ContactMe/ContactMe";
-import Navbar from "./components/Navbar/Navbar";
+import About from "./components/About/About";
+import Projects from "./components/Projects/Projects";
+import Resume from "./components/Resume/Resume";
+import Experience from "./components/Experience/Experience";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
+import "./style.css";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-  const [showSideNav, setShowSideNav] = useState(false);
-
-  useLayoutEffect(() => {
-    const sizeChangeHandler = () => {
-      if (window.innerWidth >= 800) {
-        setShowSideNav(false);
-      }
-    };
-    window.addEventListener("resize", sizeChangeHandler);
-
-    return () => {
-      window.removeEventListener("resize", sizeChangeHandler);
-    };
-  });
-
-  const toggleSideNavHandler = () => {
-    setShowSideNav((prev) => !prev);
-  };
-
-  const closeSideNavHandler = () => {
-    setShowSideNav(false);
-  };
   return (
-    <div className="App">
-      <BackgroundCircles />
-      <section>
-        <Navbar
-          toggleSideNavHandler={toggleSideNavHandler}
-          showSideNav={showSideNav}
-          closeSideNavHandler={closeSideNavHandler}
-        />
-        <Switch>
-          <Route path="/home" exact>
-            <Home />
-          </Route>
-          <Route path="/about-me" exact>
-            <AboutMe />
-          </Route>
-          <Route path="/my-projects" exact>
-            <MyProjects />
-          </Route>
-          <Route path="/contact-me" exact>
-            <ContactMe />
-          </Route>
-          <Route path="*">
-            <Redirect to="/home" />
-          </Route>
-        </Switch>
-      </section>
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/project" element={<Projects />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
