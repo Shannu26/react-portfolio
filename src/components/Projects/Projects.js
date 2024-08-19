@@ -17,6 +17,16 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               // imgPath={chatify}
+              title="Video Conferencing Application"
+              line1="• Built a MERN Stack Video Conferencing app with features such as peer-to-peer video streaming, real-time messaging, screen sharing, and user authentication via JWT."
+              line2="• Integrated WebRTC and SimplePeer for Peer-to-Peer Communication to enable seamless, low-latency video and audio communication between users."
+              line3=""
+              ghLink="https://github.com/Shannu26/mern-video-chat-app"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              // imgPath={chatify}
               title="Hospital Finder"
               line1="• Led a team of 4 to develop an iOS Application to find the nearest hospital during emergencies."
               line2="• Coordinated and administered project tasks, ensuring a 95% compliance with the project schedule."
@@ -27,7 +37,6 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              // imgPath={bitsOfCode}
               title="Chat App"
               line1="• Developed a MERN Stack Chat Application enabling real-time data transfer between users by establishing 2-way communication between the client and server using web sockets."
               line2="• Employed technologies including ReactJS, NodeJS, Socket.io, Styled Components, ExpressJS, React Router, and MongoDB."
@@ -37,31 +46,26 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              // imgPath={editor}
               title="E-Commerce Website"
               line1="• Built a PERN Stack E-Commerce app for a seamless and secure online shopping experience."
               line2="• Integrated CRUD functionality using PostgresSQL, reducing data retrieval time by 60%, and implemented secure user authentication with PassportJS."
               line3="• Designed an order management system to track and process customer orders and an admin dashboard for product management, order processing, and user management."
-              // ghLink="https://github.com/soumyajit4419/Editor.io"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              // imgPath={leaf}
               isBlog={false}
               title="Notes App"
               line1="• Developed a full stack application to store and track notes based on categories using NodeJS backend and EJS frontend. "
               line2="• Integrated CRUD functionality using MongoDB and MongooseJS, reducing data retrieval time by 60%, and implemented secure user authentication with PassportJS. "
               line3="• Made use of HTML, CSS, JavaScript, EJS, NodeJS, ExpressJS, PassportJS, and MongoDB, resulting in a 30% reduction in page load times."
               ghLink="https://github.com/Shannu26/full-stack-notes-app"
-              // demoLink="https://plant49-ai.herokuapp.com/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              // imgPath={leaf}
               isBlog={false}
               title="Weather App"
               line1="• Developed a Simple Weather application using ReactJS and OpenWeatherMap API to get weather details of a particular city."
@@ -73,7 +77,6 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              // imgPath={leaf}
               isBlog={false}
               title="Sort Visualizer"
               line1="• Developed a Web App using ReactJS and ChartJS to visualise sorting algorithms."

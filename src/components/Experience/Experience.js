@@ -21,12 +21,12 @@ function Experience() {
         <strong className="purple">Experiences</strong>
       </h1>
       <VerticalTimeline>
-        {timelineElements.map((element) => {
+        {timelineElements.map((element, elIndex) => {
           let isWorkIcon = element.icon === "work";
 
           return (
             <VerticalTimelineElement
-              key={element.key}
+              key={element.id}
               date={element.date}
               dateClassName="date"
               iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
@@ -41,9 +41,17 @@ function Experience() {
               <h5 className="vertical-timeline-element-subtitle">
                 {element.location}
               </h5>
-              <p id="description" style={{ textAlign: "justify" }}>
-                {element.description}
-              </p>
+              {element.description.map((desc, index) => {
+                return (
+                  <p
+                    key={`${elIndex}-${index}`}
+                    id="description"
+                    style={{ textAlign: "justify" }}
+                  >
+                    {desc}
+                  </p>
+                );
+              })}
             </VerticalTimelineElement>
           );
         })}
